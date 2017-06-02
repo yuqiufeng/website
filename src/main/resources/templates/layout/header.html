@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    <link th:href="@{bootstrap-3.3.7/css/bootstrap.css}" href="/static/bootstrap-3.3.7/css/bootstrap.css"
+          rel="stylesheet"/>
+    <link href="/static/css/index.css" th:href="@{css/index.css}" rel="stylesheet" />
+
+
+</head>
+<body>
+<nav class="navbar navbar-inverse navbar-fixed-top" th:fragment="header-navbar">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="https://www.baidu.com">
+                <img class="logo-brand" src="/static/images/logo/logo-msg-white.png" th:src="@{images/logo/logo-msg-white.png}"/>
+            </a>
+        </div>
+
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="active">
+                    <a href="#">首页</a>
+                </li>
+                <li>
+                    <a href="#">简介</a>
+                </li>
+                <li>
+                    <a href="#">案例</a>
+                </li>
+                <li>
+                    <a href="#">解决方案</a>
+                </li>
+                <li>
+                    <a href="#">集客入口</a>
+                </li>
+                <li>
+                    <a href="#">招聘</a>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" role="button">更多</a>
+                    <ul class="dropdown-menu dropdown-menu-right">
+                        <li><a>更多-1</a></li>
+                        <li><a>更多-1</a></li>
+                        <li><a>更多-1</a></li>
+                        <li class="divider" role="separator"></li>
+                        <li><a>更多-1</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+</nav>
+
+
+<div class="container-fluid bs-docs-footer" th:fragment="frag-footer">
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+            <ul class="list-inline">
+                <li>
+                    <a href="#">
+                        <img src="/static/images/logo/logo-white.png" th:src="@{images/logo/logo-white.png}" class="foot-logo" />
+                    </a>
+                </li>
+                <li class="">
+                    <a href="#">首页</a>
+                </li>
+                <li class="">
+                    <a href="#">简介</a>
+                </li>
+                <li class="">
+                    <a href="#">案例</a>
+                </li>
+                <li class="">
+                    <a href="#">解决方案</a>
+                </li>
+                <li class="">
+                    <a href="#">集客入口</a>
+                </li>
+                <li>
+                    <a href="#">招聘</a>
+                </li>
+                <li class="foot-contact-item">
+                    <a href="#">
+                        <span class="glyphicon glyphicon-earphone"></span>
+                        <span class="contact-phone">8888-888-88</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <p>
+        copy right@2016-2017杭州钜美网络科技有限公司 浙ICP备16026334号
+    </p>
+</div>
+
+
+<script src="/static/jquery-1.12.4.js" th:src="@{jquery-1.12.4.js}"></script>
+<script src="/static/bootstrap-3.3.7/js/bootstrap.js" th:src="@{bootstrap-3.3.7/js/bootstrap.js}"></script>
+</body>
+</html>

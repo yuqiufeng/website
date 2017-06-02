@@ -1,0 +1,40 @@
+/*顶部*/
+.logo-brand {
+    height: 50px;
+    margin-top: -14px;
+}
+
+
+/* 底部 */
+.bs-docs-footer {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-top: 100px;
+    color: #99979c;
+    text-align: center;
+    background-color: #2a2730;
+}
+
+.bs-docs-footer li a {
+    color: #f5f5f5;
+    font-weight: 200;
+    font-size: 14px;
+}
+.contact-phone {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+
+.foot-contact-item {
+    margin-left: 10px;
+}
+
+.foot-contact-item .glyphicon-earphone {
+    color: yellow;
+}
+
+.foot-logo {
+    height: 35px;
+    margin-right: 40px;
+}
