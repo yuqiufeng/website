@@ -3,8 +3,22 @@
  */
 
 $(document).ready(function(){
-    console.log("index.js loaded...")
-
+    // 案例分析 slider 初始化
+    var caseSwiper = new Swiper('.swiper-container', {
+        initialSlide: 2,
+        pagination: '.swiper-pagination',
+        effect: 'coverflow',
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: 'auto',
+        coverflow: {
+            rotate: 50,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows : true
+        }
+    });
 
 
 })

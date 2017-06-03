@@ -4,12 +4,184 @@
     margin-top: -14px;
 }
 
+/* 内容部分 */
+.content-container {
+    /*padding: 50px 0 0 0;*/
+    margin-top: -20px;
+}
+
+/* 轮播图 */
+.top-swiper-img {
+    height: 100%;
+    max-height: 650px;
+    width: 100%;
+}
+
+/* 简介 */
+.brief-introduction {
+    height: 500px;
+    padding-top: 100px;
+    background: url("/images/service.jpg") no-repeat center center;
+}
+.brief-introduction h1 {
+    font-size: 70px;
+}
+.brief-introduction p {
+    font-size: 12px;
+}
+
+/* 业务服务 */
+.service-module {
+    margin-top:80px;
+}
+.service-title span.label {
+    background-color: #000;
+    font-size: 20px;
+    font-weight:200;
+    border-radius: 4em;
+    padding: 10px 20px 10px 20px;
+    position: relative;
+    top: -32px;
+}
+.service-title hr {
+    border-width: 5px;
+}
+
+.service-content {
+    height: 550px;
+    padding-top: 50px;
+    background: url("/images/service.jpg") no-repeat center center;
+    color: #9d9d9d;
+}
+
+.service-content table {
+    border: none;
+    margin-top: 30px;
+    color: #FFF;
+    font-size: 14px;
+}
+
+.service-content table tr.first-tbl-row td {
+    border-top:none;
+}
+.service-content table tr.last-tbl-row td {
+    border-bottom:none;
+}
+.service-content table td.first-tbl-col {
+    border-left:none;
+}
+.service-content table td.last-tbl-col{
+    border-right:none;
+}
+
+/* 合作品牌 */
+.cooperation-module {
+    margin-top:80px;
+}
+.cooperation-title span.label {
+    background-color: #000;
+    font-size: 20px;
+    font-weight:200;
+    border-radius: 4em;
+    padding: 10px 20px 10px 20px;
+    position: relative;
+    top: -32px;
+}
+.cooperation-title hr {
+    border-width: 5px;
+}
+.cooperation-brand div.row {
+    margin-top: 10px;
+}
+
+#cooperation-channel {
+    height: 600px;
+    background: url("/images/service.jpg") no-repeat center center;
+    color: #9d9d9d;
+    padding-top: 180px;
+}
+
+#deep-channel-title {
+    color: #000;
+    font-size: 50px;
+    font-weight: bolder;
+}
+#channel-mid {
+    font-size: 20px;
+    font-weight: 300;
+}
+#channel-detail {
+    font-size: 12px;
+}
+
+/* 钜美优势 */
+.advantage {
+    height: 500px;
+    background: url("/images/service.jpg") no-repeat center center;
+    padding-top: 180px;
+}
+
+/* 案例分析 */
+.case-analysts img {
+    width: 100%;
+    height: 100%;
+}
+.swiper-container {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 400px;
+}
+
+
+
+/* 解决方案 */
+.solution div.row {
+    padding-top: 80px;
+}
+
+.solution-row {
+    padding-bottom: 80px;
+}
+.solution-row-even {
+    background-color: #cccccc;
+}
+
+.solution-1 {
+    height: 330px;
+    background: url("/images/solution-1.png") no-repeat center center;
+}
+.solution-2 {
+    height: 330px;
+    background: url("/images/solution-2.png") no-repeat center center;
+}
+.solution-3 {
+    height: 330px;
+    background: url("/images/solution-3.png") no-repeat center center;
+}
+.solution-4 {
+    height: 330px;
+    background: url("/images/solution-4.png") no-repeat center center;
+}
+.solution-5 {
+    height: 330px;
+    background: url("/images/solution-5.png") no-repeat center center;
+}
+.solution-msg {
+    padding: 50px 0 0 200px;
+}
+
 
 /* 底部 */
 .bs-docs-footer {
     padding-top: 50px;
     padding-bottom: 50px;
-    margin-top: 100px;
+    margin-top: 0;
     color: #99979c;
     text-align: center;
     background-color: #2a2730;
@@ -32,6 +204,7 @@
 
 .foot-contact-item .glyphicon-earphone {
     color: yellow;
+    font-size: 20px;
 }
 
 .foot-logo {
