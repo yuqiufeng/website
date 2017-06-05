@@ -3,6 +3,10 @@
  */
 
 $(document).ready(function(){
+    if (locationHash) {
+        location.hash = locationHash;
+    }
+
     // 案例分析 slider 初始化
     var caseSwiper = new Swiper('.swiper-container', {
         initialSlide: 2,

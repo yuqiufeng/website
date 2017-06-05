@@ -432,5 +432,8 @@
 
     <script src="/static/js/index.js" th:src="@{js/index.js}"></script>
 
+    <script th:inline="javascript">
+        var locationHash = [[${locationHash}]]
+    </script>
 </body>
 </html>

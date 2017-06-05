@@ -21,7 +21,11 @@
 .brief-introduction {
     height: 500px;
     padding-top: 100px;
-    background: url("/images/service.jpg") no-repeat center center;
+    background: url("/images/service.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 .brief-introduction h1 {
     font-size: 70px;
@@ -50,7 +54,11 @@
 .service-content {
     height: 550px;
     padding-top: 50px;
-    background: url("/images/service.jpg") no-repeat center center;
+    background: url("/images/service.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     color: #9d9d9d;
 }
 
@@ -96,7 +104,11 @@
 
 #cooperation-channel {
     height: 600px;
-    background: url("/images/service.jpg") no-repeat center center;
+    background: url("/images/service.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     color: #9d9d9d;
     padding-top: 180px;
 }
@@ -117,7 +129,11 @@
 /* 钜美优势 */
 .advantage {
     height: 500px;
-    background: url("/images/service.jpg") no-repeat center center;
+    background: url("/images/service.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     padding-top: 180px;
 }
 
