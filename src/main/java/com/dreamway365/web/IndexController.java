@@ -12,9 +12,13 @@ import org.springframework.web.bind.annotation.RequestParam;
 public class IndexController {
 
     @RequestMapping("index")
-    String index(@RequestParam(name = "hash",required = false,defaultValue = "0") String hash, ModelMap modelMap) {
-        modelMap.addAttribute("locationHash",hash);
+    String index(ModelMap modelMap) {
         return "index";
+    }
+
+    @RequestMapping("joinus")
+    String joinus(ModelMap modelMap) {
+        return "joinus";
     }
 
 }

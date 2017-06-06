@@ -192,6 +192,78 @@
     padding: 50px 0 0 200px;
 }
 
+/* 团队介绍 */
+.team-module {
+    margin-top:80px;
+}
+.team-title span.label {
+    background-color: #000;
+    font-size: 20px;
+    font-weight:200;
+    border-radius: 4em;
+    padding: 10px 20px 10px 20px;
+    position: relative;
+    top: -32px;
+}
+.team-title hr {
+    border-width: 5px;
+}
+
+.member-row {
+    height: 269px;
+    margin-bottom: 150px;
+}
+
+.social-logo {
+    margin-top: 30px;
+}
+.social-logo:hover {
+
+}
+.wechat-logo {
+    width:50px;
+}
+
+
+.weibo-logo {
+    width:50px;
+}
+
+.social-logo:hover {
+    cursor: crosshair;
+}
+.wechat-QR-code {
+    width: 120px;
+    position: relative;
+    top: -207px;
+    left: 39px;
+    display: none;
+}
+.weibo-QR-code {
+    width: 120px;
+    position: relative;
+    top: -169px;
+    left: 39px;
+    display: none;
+}
+
+.bio {
+    padding: 30px 70px;
+    background-color: #EFEFEF;
+    left: -57px;
+    top: 57px;
+    z-index: -5;
+}
+.bio-role{
+    font-size:18px;
+    color: #949494;
+}
+.bio-msg {
+    color: #BEBEBE;
+}
+
+
+
 
 /* 底部 */
 .bs-docs-footer {

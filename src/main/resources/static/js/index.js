@@ -3,9 +3,6 @@
  */
 
 $(document).ready(function(){
-    if (locationHash) {
-        location.hash = locationHash;
-    }
 
     // 案例分析 slider 初始化
     var caseSwiper = new Swiper('.swiper-container', {
@@ -24,5 +21,17 @@ $(document).ready(function(){
         }
     });
 
+
+    //微信 微博 二维码  显示／关闭
+    $(".social-logo").hover(
+        function(){
+            var QRcode = $(this).data("qrCode");
+            $(this).parent().parent().find("img." + QRcode).show();
+        },
+        function(){
+            var QRcode = $(this).data("qrCode");
+            $(this).parent().parent().find("img." + QRcode).hide();
+        }
+    )
 
 })
