@@ -32,6 +32,38 @@ $(document).ready(function(){
             var QRcode = $(this).data("qrCode");
             $(this).parent().parent().find("img." + QRcode).hide();
         }
-    )
+    );
+
+    //滚动 显示 效果
+    $(".smoove-service").smoove({
+        offset:0,
+        moveZ:'-500px'
+    })
+
+    $(".smoove-1").smoove({
+        offset:0,
+        moveY:'-800px'
+
+    });
+    $(".smoove-2").smoove({
+        offset:0,
+        moveX:'-800px'
+
+    });
+    $(".smoove-3").smoove({
+        offset:0,
+        moveX:'800px'
+
+    });
+    $(".smoove-4").smoove({
+        offset:0,
+        rotateY:'90deg'
+
+    });
+    $(".smoove-5").smoove({
+        offset:0,
+        moveZ:'-800px'
+
+    });
 
 })
