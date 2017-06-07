@@ -21,7 +21,7 @@
 .brief-introduction {
     height: 500px;
     padding-top: 100px;
-    background: url("/images/service.jpg") no-repeat center center fixed;
+    background: url("/images/introducation-bg.png") no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -54,7 +54,7 @@
 .service-content {
     height: 550px;
     padding-top: 50px;
-    background: url("/images/service.jpg") no-repeat center center fixed;
+    background: url("/images/service.jpg") no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -64,7 +64,7 @@
 
 .service-content table {
     border: none;
-    margin-top: 30px;
+    margin-top: 100px;
     color: #FFF;
     font-size: 14px;
 }
@@ -102,9 +102,19 @@
     margin-top: 10px;
 }
 
+#channel-list img{
+    width: 128px;
+}
+#channel-list div.cooperation-brand {
+    height: 640px;
+}
+#cooperation-swiper a {
+    background: none;
+}
+
 #cooperation-channel {
     height: 600px;
-    background: url("/images/service.jpg") no-repeat center center fixed;
+    background: url("/images/deep-channel.png") no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -129,12 +139,12 @@
 /* 钜美优势 */
 .advantage {
     height: 500px;
-    background: url("/images/service.jpg") no-repeat center center fixed;
+    background: url("/images/advantage.png") no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    padding-top: 180px;
+    margin-top: 80px;
 }
 
 /* 案例分析 */
