@@ -76,47 +76,21 @@ $(document).ready(function(){
 
     });
 
+
+    initPosition();
 });
 
-//合作渠道 列表
-function listChannel() {
-    var swiperCount = Math.ceil(channleSize / 25);
-
-    var iEle = '';
-    for (var i = 1; i <= swiperCount; i++) {
-        var iHtml = '<div class="container cooperation-brand item">';
-        if (i == 1) {
-            iHtml = '<div class="container cooperation-brand item active">';
-        }
-
-        var j1 = (i - 1) * 5 + 1;
-        var j2 = j1 + 4;
-        var jEle = '';
-        for (var j = j1; j <= j2; j++) {
-            var jHtml = '<div class="row">';
-
-            var k1 = (j - 1) * 5 + 1;
-            var k2 = k1 + 4;
-
-            var kEle = '';
-            for (var k = k1; k <= channleSize && k <= k2; k++) {
-                var kHtml = '<div class="col-md-2">';
-                if (k == k1) {
-                    kHtml = '<div class="col-md-2 col-md-offset-1">';
-                }
-                kHtml += '<img src="images/c-' + k + '.png" /></div>';
-                kEle += kHtml;
-            }
-            jHtml += kEle;
-            jHtml += '</div>';
-            jEle + jHtml;
-        }
-        iHtml += jEle;
-        iHtml += '</div>';
-    }
-    iEle += iHtml;
-    console.log(iEle);
-    $("#channel-list").empty().append(iEle);
-
-
+//位置地图
+function initPosition() {
+    var map = new AMap.Map('position',{
+        zoom: 18,
+        center: [120.178767,30.214251]
+    });
+    var marker = new AMap.Marker({
+        position: [120.178767,30.214251],
+        map:map,
+        title: '杭州市上城区飞云江路9号赞成中心西楼807',
+        clickable:true
+    });
 }
+
