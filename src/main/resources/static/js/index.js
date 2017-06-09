@@ -43,6 +43,13 @@ $(document).ready(function(){
         moveZ:'-500px'
     })
 
+
+    //合作品牌
+    $("div.cooperation-brand img").smoove({
+        offset:0,
+        rotateY:'90deg'
+    });
+
     $(".smoove-1").smoove({
         offset:0,
         moveY:'-800px'

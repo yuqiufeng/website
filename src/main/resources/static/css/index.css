@@ -13,14 +13,14 @@
 /* 轮播图 */
 .top-swiper-img {
     height: 100%;
-    max-height: 650px;
+    max-height: 900px;
     width: 100%;
 }
 
 /* 简介 */
 .brief-introduction {
-    height: 500px;
-    padding-top: 100px;
+    height: 600px;
+    padding-top: 120px;
     background: url("/images/introducation-bg.png") no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -87,8 +87,7 @@
     margin-top:80px;
 }
 .cooperation-title span.label {
-    background-color: #000;
-    font-size: 20px;
+    background-color: #000;    font-size: 20px;
     font-weight:200;
     border-radius: 4em;
     padding: 10px 20px 10px 20px;
@@ -120,7 +119,7 @@
     -o-background-size: cover;
     background-size: cover;
     color: #9d9d9d;
-    padding-top: 180px;
+    padding-top: 150px;
 }
 
 #deep-channel-title {
