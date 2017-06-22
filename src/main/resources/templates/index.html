@@ -57,32 +57,32 @@
             <div class="container text-center">
                 <table class="table table-bordered">
                     <tr class="first-tbl-row">
-                        <td class="first-tbl-col">
+                        <td class="first-tbl-col opa-td">
                             <img class="smoove-service" src="/static/images/business-service-1.png" th:src="@{images/business-service-1.png}"/>
                             <!--<br/>
                             <span>咨询服务</span>-->
                         </td>
-                        <td>
+                        <td class="opa-td">
                             <img class="smoove-service" src="/static/images/business-service-2.png" th:src="@{images/business-service-2.png}"/>
                         </td>
-                        <td>
+                        <td class="opa-td">
                             <img class="smoove-service" src="/static/images/business-service-3.png" th:src="@{images/business-service-3.png}"/>
                         </td>
-                        <td class="last-tbl-col">
+                        <td class="last-tbl-col opa-td">
                             <img class="smoove-service" src="/static/images/business-service-4.png" th:src="@{images/business-service-4.png}"/>
                         </td>
                     </tr>
                     <tr class="last-tbl-row">
-                        <td class="first-tbl-col">
+                        <td class="first-tbl-col opa-td">
                             <img class="smoove-service" src="/static/images/business-service-5.png" th:src="@{images/business-service-5.png}"/>
                         </td>
-                        <td>
+                        <td class="opa-td">
                             <img class="smoove-service" src="/static/images/business-service-6.png" th:src="@{images/business-service-6.png}"/>
                         </td>
-                        <td>
+                        <td class="opa-td">
                             <img class="smoove-service" src="/static/images/business-service-7.png" th:src="@{images/business-service-7.png}"/>
                         </td>
-                        <td class="last-tbl-col">
+                        <td class="last-tbl-col opa-td">
                             <img class="smoove-service" src="/static/images/business-service-8.png" th:src="@{images/business-service-8.png}"/>
                         </td>
                     </tr>
@@ -256,25 +256,38 @@
         </div>
         <div class="case-analysts">
             <div class="swiper-container swiper-container-horizontal" style="cursor: -webkit-grab;">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <img class="img-thumbnail" src="/static/images/dog.jpg" th:src="@{images/dog.jpg}"/>
+                <div class="swiper-wrapper" id="case-swiper-slide">
+                    <div class="swiper-slide text-center swiper-no-swiping">
+                        <img class="img-rounded case-analysts-idx-show" src="/static/images/case/case-0-0.png" th:src="@{images/case/case-0-0.png}"/>
+                        <img class="img-thumbnail case-analysts-bs" src="/static/images/case/case-0.png" th:src="@{images/case/case-0.png}"/>
                     </div>
-                    <div class="swiper-slide">
-                        <img class="img-thumbnail" src="/static/images/dog.jpg" th:src="@{images/dog.jpg}"/>
+                    <div class="swiper-slide text-center swiper-no-swiping">
+                        <img class="img-rounded case-analysts-idx-show" src="/static/images/case/case-1-1.png" th:src="@{images/case/case-1-1.png}"/>
+                        <img class="img-thumbnail case-analysts-bs" src="/static/images/case/case-1.png" th:src="@{images/case/case-1.png}"/>
                     </div>
-                    <div class="swiper-slide">
-                        <img class="img-thumbnail" src="/static/images/dog.jpg" th:src="@{images/dog.jpg}"/>
+                    <div class="swiper-slide text-center swiper-no-swiping">
+                        <img class="img-rounded case-analysts-idx-show" src="/static/images/case/case-2-2.png" th:src="@{images/case/case-2-2.png}"/>
+                        <img class="img-thumbnail case-analysts-bs" src="/static/images/case/case-2.png" th:src="@{images/case/case-2.png}"/>
                     </div>
-                    <div class="swiper-slide">
-                        <img class="img-thumbnail" src="/static/images/dog.jpg" th:src="@{images/dog.jpg}"/>
+                    <div class="swiper-slide text-center swiper-no-swiping">
+                        <img class="img-rounded case-analysts-idx-show" src="/static/images/case/case-3-3.png" th:src="@{images/case/case-3-3.png}"/>
+                        <img class="img-thumbnail case-analysts-bs" src="/static/images/case/case-3.png" th:src="@{images/case/case-3.png}"/>
                     </div>
-                    <div class="swiper-slide">
-                        <img class="img-thumbnail" src="/static/images/dog.jpg" th:src="@{images/dog.jpg}"/>
+                    <div class="swiper-slide text-center swiper-no-swiping">
+                        <img class="img-rounded case-analysts-idx-show" src="/static/images/case/case-4-4.png" th:src="@{images/case/case-4-4.png}"/>
+                        <img class="img-thumbnail case-analysts-bs" src="/static/images/case/case-4.png" th:src="@{images/case/case-4.png}"/>
+                    </div>
+                    <div class="swiper-slide text-center swiper-no-swiping">
+                        <img class="img-rounded case-analysts-idx-show" src="/static/images/case/case-5-5.png" th:src="@{images/case/case-5-5.png}"/>
+                        <img class="img-thumbnail case-analysts-bs" src="/static/images/case/case-5.png" th:src="@{images/case/case-5.png}"/>
                     </div>
                 </div>
 
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
                 <div class="swiper-pagination"></div>
+
             </div>
         </div>
     </div>
@@ -360,19 +373,7 @@
                                 <img class="head-pic img-circle" src="/static/images/dog.jpg"
                                      th:src="@{images/dog.jpg}"/>
                             </li>
-                            <li class="social-logo" data-qr-code="wechat-QR-code">
-                                <img class="wechat-logo" src="/static/images/logo/weichat-logo.png"
-                                     th:src="@{images/logo/weichat-logo.png}"/>
-                            </li>
-                            <li class="social-logo" data-qr-code="weibo-QR-code">
-                                <img class="weibo-logo" src="/static/images/logo/weibo-logo.jpg"
-                                     th:src="@{images/logo/weibo-logo.jpg}"/>
-                            </li>
                         </ul>
-                        <img class="wechat-QR-code" src="/static/images/members/qiufeng-wechat-1.png"
-                             th:src="@{images/members/qiufeng-wechat-1.png}"/>
-                        <img class="weibo-QR-code" src="/static/images/members/qiufeng-weibo.png"
-                             th:src="@{images/members/qiufeng-weibo.png}"/>
                     </div>
                     <div class="col-md-9 bio">
                         <h3>SilenceQF</h3>
@@ -388,19 +389,7 @@
                                 <img class="head-pic img-circle" src="/static/images/dog.jpg"
                                      th:src="@{images/dog.jpg}"/>
                             </li>
-                            <li class="social-logo" data-qr-code="wechat-QR-code">
-                                <img class="wechat-logo" src="/static/images/logo/weichat-logo.png"
-                                     th:src="@{images/logo/weichat-logo.png}"/>
-                            </li>
-                            <li class="social-logo" data-qr-code="weibo-QR-code">
-                                <img class="weibo-logo" src="/static/images/logo/weibo-logo.jpg"
-                                     th:src="@{images/logo/weibo-logo.jpg}"/>
-                            </li>
                         </ul>
-                        <img class="wechat-QR-code" src="/static/images/members/qiufeng-wechat-2.png"
-                             th:src="@{images/members/qiufeng-wechat-2.png}"/>
-                        <img class="weibo-QR-code" src="/static/images/members/qiufeng-weibo.png"
-                             th:src="@{images/members/qiufeng-weibo.png}"/>
                     </div>
                     <div class="col-md-9 bio">
                         <h3>SilenceQF</h3>
@@ -419,19 +408,7 @@
                                 <img class="head-pic img-rounded" src="/static/images/dog.jpg"
                                      th:src="@{images/dog.jpg}"/>
                             </li>
-                            <li class="social-logo" data-qr-code="wechat-QR-code">
-                                <img class="wechat-logo" src="/static/images/logo/weichat-logo.png"
-                                     th:src="@{images/logo/weichat-logo.png}"/>
-                            </li>
-                            <li class="social-logo" data-qr-code="weibo-QR-code">
-                                <img class="weibo-logo" src="/static/images/logo/weibo-logo.jpg"
-                                     th:src="@{images/logo/weibo-logo.jpg}"/>
-                            </li>
                         </ul>
-                        <img class="wechat-QR-code" src="/static/images/members/qiufeng-wechat-3.png"
-                             th:src="@{images/members/qiufeng-wechat-3.png}"/>
-                        <img class="weibo-QR-code" src="/static/images/members/qiufeng-weibo.png"
-                             th:src="@{images/members/qiufeng-weibo.png}"/>
                     </div>
                     <div class="col-md-9 bio">
                         <h3>SilenceQF</h3>
@@ -447,19 +424,7 @@
                                 <img class="head-pic img-rounded" src="/static/images/dog.jpg"
                                      th:src="@{images/dog.jpg}"/>
                             </li>
-                            <li class="social-logo" data-qr-code="wechat-QR-code">
-                                <img class="wechat-logo" src="/static/images/logo/weichat-logo.png"
-                                     th:src="@{images/logo/weichat-logo.png}"/>
-                            </li>
-                            <li class="social-logo" data-qr-code="weibo-QR-code">
-                                <img class="weibo-logo" src="/static/images/logo/weibo-logo.jpg"
-                                     th:src="@{images/logo/weibo-logo.jpg}"/>
-                            </li>
                         </ul>
-                        <img class="wechat-QR-code" src="/static/images/members/qiufeng-wechat-4.png"
-                             th:src="@{images/members/qiufeng-wechat-4.png}"/>
-                        <img class="weibo-QR-code" src="/static/images/members/qiufeng-weibo.png"
-                             th:src="@{images/members/qiufeng-weibo.png}"/>
                     </div>
                     <div class="col-md-9 bio">
                         <h3>SilenceQF</h3>
@@ -478,19 +443,7 @@
                                 <img class="head-pic img-thumbnail" src="/static/images/dog.jpg"
                                      th:src="@{images/dog.jpg}"/>
                             </li>
-                            <li class="social-logo" data-qr-code="wechat-QR-code">
-                                <img class="wechat-logo" src="/static/images/logo/weichat-logo.png"
-                                     th:src="@{images/logo/weichat-logo.png}"/>
-                            </li>
-                            <li class="social-logo" data-qr-code="weibo-QR-code">
-                                <img class="weibo-logo" src="/static/images/logo/weibo-logo.jpg"
-                                     th:src="@{images/logo/weibo-logo.jpg}"/>
-                            </li>
                         </ul>
-                        <img class="wechat-QR-code" src="/static/images/members/qiufeng-wechat-5.png"
-                             th:src="@{images/members/qiufeng-wechat-5.png}"/>
-                        <img class="weibo-QR-code" src="/static/images/members/qiufeng-weibo.png"
-                             th:src="@{images/members/qiufeng-weibo.png}"/>
                     </div>
                     <div class="col-md-9 bio">
                         <h3>SilenceQF</h3>
@@ -506,19 +459,7 @@
                                 <img class="head-pic img-thumbnail" src="/static/images/dog.jpg"
                                      th:src="@{images/dog.jpg}"/>
                             </li>
-                            <li class="social-logo" data-qr-code="wechat-QR-code">
-                                <img class="wechat-logo" src="/static/images/logo/weichat-logo.png"
-                                     th:src="@{images/logo/weichat-logo.png}"/>
-                            </li>
-                            <li class="social-logo" data-qr-code="weibo-QR-code">
-                                <img class="weibo-logo" src="/static/images/logo/weibo-logo.jpg"
-                                     th:src="@{images/logo/weibo-logo.jpg}"/>
-                            </li>
                         </ul>
-                        <img class="wechat-QR-code" src="/static/images/members/qiufeng-wechat-6.png"
-                             th:src="@{images/members/qiufeng-wechat-6.png}"/>
-                        <img class="weibo-QR-code" src="/static/images/members/qiufeng-weibo.png"
-                             th:src="@{images/members/qiufeng-weibo.png}"/>
                     </div>
                     <div class="col-md-9 bio">
                         <h3>SilenceQF</h3>
@@ -545,12 +486,58 @@
 
         <!-- position -->
         <div id="position">
-
-
         </div>
     </div>
 </div>
 
+
+<!-- modal -->
+<div class="modal fade" id="modal-info">
+    <div class="container">
+        <div class="col-md-6">
+            <img src="/static/images/dog.jpg" th:src="@{/images/dog.jpg}" />
+        </div>
+        <div class="col-md-6">
+            <p>
+                <span>投放客户：</span>
+                <span>江铃福特万里</span>
+            </p>
+            <p>
+                <span>投放时间：</span>
+                <span>6.9-6.12</span>
+            </p>
+            <p>
+                <span>投放形式：</span>
+                <span>微信朋友圈</span>
+            </p>
+            <p>
+                <span>投放活动：</span>
+                <span>购车活动</span>
+            </p>
+            <p>
+                <span>投放定向：</span>
+                <span>杭州</span>
+            </p>
+            <p>
+                <span>内容展示量：</span>
+                <span>100W</span>
+            </p>
+            <p>
+                <span>内容点击量：</span>
+                <span>88W</span>
+            </p>
+            <p>
+                <span>投入：</span>
+                <span>¥5000</span>
+            </p>
+            <p>
+                <span>意向预约客户：</span>
+                <span>66人</span>
+            </p>
+        </div>
+    </div>
+
+</div>
 
 <footer th:replace="layout/header :: frag-footer"></footer>
 

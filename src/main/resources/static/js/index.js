@@ -9,34 +9,42 @@ $(document).ready(function(){
     // 案例分析 slider 初始化
     var caseSwiper = new Swiper('.swiper-container', {
         initialSlide: 2,
-        pagination: '.swiper-pagination',
-        effect: 'coverflow',
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        //pagination : '.swiper-pagination',
+        autoplay: 2500,
+        keyboardControl:true,
+        noSwiping: true,
         grabCursor: true,
         centeredSlides: true,
-        slidesPerView: 'auto',
+        loop: true,
+        effect: "coverflow",
         coverflow: {
-            rotate: 50,
-            stretch: 0,
-            depth: 100,
+            rotate: 0,
+            stretch:-75,
+            depth: 500,
             modifier: 1,
-            slideShadows : true
+            slideShadows: true
+        },
+        slidesPerView: 'auto',
+        spaceBetween:20,
+        onSlideChangeEnd:function (swiper) {
+            var caseSlideChildren = $("#case-swiper-slide").children();
+            caseSlideChildren.find("img.case-analysts-idx-show").hide();
+            caseSlideChildren.find("img.case-analysts-bs").show();
+            var idx = swiper.activeIndex;
+            caseSlideChildren.eq(idx).find("img.case-analysts-bs").hide();
+            caseSlideChildren.eq(idx).find("img.case-analysts-idx-show").show();
+        },
+        onClick:function (swiper) {
+            return;
+            var actIdx = swiper.activeIndex;
+            var clickIdx = swiper.clickedIndex;
+            if (actIdx == clickIdx) {
+                $("#modal-info").modal("show");
+            }
         }
     });
-
-
-
-    //微信 微博 二维码  显示／关闭
-    $(".social-logo").hover(
-        function(){
-            var QRcode = $(this).data("qrCode");
-            $(this).parent().parent().find("img." + QRcode).show();
-        },
-        function(){
-            var QRcode = $(this).data("qrCode");
-            $(this).parent().parent().find("img." + QRcode).hide();
-        }
-    );
-
     //滚动 显示 效果
     $(".smoove-service").smoove({
         offset:0,
@@ -52,28 +60,24 @@ $(document).ready(function(){
 
     $(".smoove-1").smoove({
         offset:0,
-        moveY:'-800px'
+        moveY:'350px'
 
     });
     $(".smoove-2").smoove({
         offset:0,
-        moveX:'-800px'
-
+        moveY:'350px'
     });
     $(".smoove-3").smoove({
         offset:0,
-        moveX:'800px'
-
+        moveY:'350px'
     });
     $(".smoove-4").smoove({
         offset:0,
-        rotateY:'90deg'
-
+        moveY:'350px'
     });
     $(".smoove-5").smoove({
         offset:0,
-        moveZ:'-800px'
-
+        moveY:'350px'
     });
 
 
