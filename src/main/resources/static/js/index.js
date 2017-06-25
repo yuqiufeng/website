@@ -35,14 +35,6 @@ $(document).ready(function(){
             var idx = swiper.activeIndex;
             caseSlideChildren.eq(idx).find("img.case-analysts-bs").hide();
             caseSlideChildren.eq(idx).find("img.case-analysts-idx-show").show();
-        },
-        onClick:function (swiper) {
-            return;
-            var actIdx = swiper.activeIndex;
-            var clickIdx = swiper.clickedIndex;
-            if (actIdx == clickIdx) {
-                $("#modal-info").modal("show");
-            }
         }
     });
     //滚动 显示 效果
@@ -98,3 +90,7 @@ function initPosition() {
     });
 }
 
+//案例分析-明细
+function showCaseDetail(idx) {
+    $("#modal-info").modal("show");
+}

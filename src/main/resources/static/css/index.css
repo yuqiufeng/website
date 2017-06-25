@@ -220,7 +220,7 @@
     padding-bottom: 80px;
 }
 .solution-row-even {
-    background-color: #cccccc;
+    background-color: #eff3fd;
 }
 
 .solution-1 {
@@ -251,6 +251,8 @@
 .head-pic {
     box-shadow: 10px 10px 5px #DCDCDC;
     -moz-box-shadow: 10px 10px 5px #DCDCDC;
+    width: 100px;
+    height: 100px;
 }
 
 .team-module {
@@ -322,11 +324,18 @@
     color: #BEBEBE;
 }
 
+.invite{
+    width: 100%;
+}
 
 /* 公司位置地图 */
 #position {
     height: 400px;
     margin: 0px;
+}
+
+.modal-img {
+    height: 458px;
 }
 
 
